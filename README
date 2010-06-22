@@ -1,0 +1,28 @@
+RDFDatabank workers
+===================
+
+This provides a basic supervisor framework, which plugs into the queue of changes
+within redis that are emitted from within the RDF Databank.
+
+This apes the debian Apache2 configuration in which the supervisor.conf is split up
+ between the general settings in supervisor.conf and the individual worker/process 
+ settings in 'workers_{available|enabled}' - any .conf file in workers_enabled get 
+ loaded by the supervisor process, and it is expected that configuration files
+ will be symlinked from the workers_available directory into the enabled directory.
+ 
+ There is a convenience configuration however, to save having to construct .conf
+ files by hand or to manage which ones are live. Altering the configuration within
+ 'loglines.cfg' and then running 'create_supervisord_config.py' will create entries
+ for each entry within loglines.cfg
+ 
+ The basic configuration is fairly simple and consists of 5 conf files:
+
+ process_redis.conf   - starts a redis process but should not be trusted to shutdown one without due care
+ process_solr.conf    - starts a solr jetty instance
+ worker_broker.conf   - starts a python script (included) that listens on one redis 'queue'
+                        and redistributes copies to other queues as configured in 'loglines.cfg'
+ worker_solr.conf     - Starts the worker that pushes documents to solr, by deconstructing the manifest.rdf
+                        in each object and indexes the dcterms predicates to solr predicates (dcterms:{pred} -> solr doc: <field name="{pred}" ...)
+ logger_auditlogger.conf - logs all the messages it recieves to disc
+ 
+ 
