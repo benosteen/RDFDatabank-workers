@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix prism: <http://prismstandard.org/namespaces/basic/2.0/> .
+
+:article
+	a fabio:JournalArticle
+	; dc:title "Nicotinamide-2,2,2-trifluoroethanol (2/1)"
+	; dcterms:creator [ a foaf:Person ; foaf:name "Johnston, B.F." ]
+	; dcterms:creator [ a foaf:Person ; foaf:name "Florence, A.J." ]
+	; dcterms:creator [ a foaf:Person ; foaf:name "Bardin, J." ]
+	; dcterms:creator [ a foaf:Person ; foaf:name "Kennedy, A.R." ]
+	; dcterms:creator [ a foaf:Person ; foaf:name "Wong, L.V." ]
+	; dc:rights <http://creativecommons.org/licenses/by/2.0/uk>
+	; dc:language "en"
+	; fabio:hasPublicationYear "2009"
+	; fabio:publicationDate "2009-04-01"
+	; frbr:embodiment :printedArticle , :webArticle
+	; frbr:partOf :issue
+	; fabio:doi "10.1107/S1600536809007594"
+	; frbr:part :abstract
+    ; prism:rightsagent "med@iucr.org" .
+    
+:abstract
+	a fabio:Abstract
+	; c4o:hasContent "The nicotinamide (NA) molecules of the title compound, 2C6H6N2O.C2H3F3O, form centrosymmetric R22(8) hydrogen-bonded dimers via N-H...O contacts. The asymmetric unit contains two molecules of NA and one trifluoroethanol molecule disordered over two sites of equal occupancy. The packing consists of alternating layers of nicotinamide dimers and disordered 2,2,2-trifluoroethanol molecules stacking in the c-axis direction. Intramolecular C-H...O and intermolecular N-H...N, O-H...N, C-H...N, C-H...O and C-H...F interactions are present." .
+
+
+:printedArticle
+	a fabio:PrintObject
+	; prism:pageRange "727-728" .
+	
+:webArticle
+	a fabio:WebPage
+	; fabio:hasURL "http://scripts.iucr.org/cgi-bin/paper?fl2234" .
+
+:volume
+	a fabio:JournalVolume
+	; prism:volume "65"
+	; frbr:partOf :journal .
+
+:issue
+	a fabio:JournalIssue
+	; prism:issueIdentifier "4"
+	; frbr:partOf :volume
+
+:journal
+	a fabio:Journal
+	; dc:title "Acta Crystallographica Section E: Structure Reports Online"
+	; fabio:hasShortTitle "Acta Cryst. E"
+	; dcterms:publisher [ a foaf:Organization ; foaf:name "International Union of Crystallography" ]
+	; fabio:issn "1600-5368" .

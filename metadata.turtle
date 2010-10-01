@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:prism="http://prismstandard.org/namespaces/1.2/basic/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="doi:10.1107/S1600536809007594">
+    <prism:issn>1600-5368</prism:issn>
+    <prism:startingpage>727</prism:startingpage>
+    <prism:number>4</prism:number>
+    <dc:creator>Johnston, B.F.</dc:creator>
+    <dc:creator>Florence, A.J.</dc:creator>
+    <dc:creator>Bardin, J.</dc:creator>
+    <dc:creator>Kennedy, A.R.</dc:creator>
+    <dc:creator>Wong, L.V.</dc:creator>
+    <prism:publicationname>Acta Crystallographica Section E: Structure Reports Online</prism:publicationname>
+    <dc:date>2009-04-01</dc:date>
+    <dc:title>Nicotinamide-2,2,2-trifluoroethanol (2/1)</dc:title>
+    <prism:publicationdate>2009-04-01</prism:publicationdate>
+    <dc:rights rdf:resource="http://creativecommons.org/licenses/by/2.0/uk"/>
+    <dc:subject></dc:subject>
+    <dcterms:abstract>The nicotinamide (NA) molecules of the title compound, 2C6H6N2O.C2H3F3O, form centrosymmetric R22(8) hydrogen-bonded dimers via N-H...O contacts. The asymmetric unit contains two molecules of NA and one trifluoroethanol molecule disordered over two sites of equal occupancy. The packing consists of alternating layers of nicotinamide dimers and disordered 2,2,2-trifluoroethanol molecules stacking in the c-axis direction. Intramolecular C-H...O and intermolecular N-H...N, O-H...N, C-H...N, C-H...O and C-H...F interactions are present.</dcterms:abstract>
+    <prism:eissn>1600-5368</prism:eissn>
+    <dc:type>text</dc:type>
+    <dc:link rdf:resource="http://scripts.iucr.org/cgi-bin/paper?fl2234"/>
+    <dc:publisher>International Union of Crystallography</dc:publisher>
+    <prism:section>organic compounds</prism:section>
+    <prism:volume>65</prism:volume>
+    <dc:source rdf:resource="urn:issn:1600-5368"/>
+    <dc:identifier rdf:resource="doi:10.1107/S1600536809007594"/>
+    <dc:language>en</dc:language>
+    <dc:description>The nicotinamide (NA) molecules of the title compound, 2C6H6N2O.C2H3F3O, form centrosymmetric R22(8) hydrogen-bonded dimers via N-H...O contacts. The asymmetric unit contains two molecules of NA and one trifluoroethanol molecule disordered over two sites of equal occupancy. The packing consists of alternating layers of nicotinamide dimers and disordered 2,2,2-trifluoroethanol molecules stacking in the c-axis direction. Intramolecular C-H...O and intermolecular N-H...N, O-H...N, C-H...N, C-H...O and C-H...F interactions are present.</dc:description>
+    <prism:endingpage>728</prism:endingpage>
+    <prism:rightsagent>med@iucr.org</prism:rightsagent>
+  </rdf:Description>
+</rdf:RDF>

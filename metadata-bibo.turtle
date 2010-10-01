@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix prism: <http://prismstandard.org/namespaces/basic/2.0/> .
+
+<info:doi:10.1107/S1600536809007594>
+	a bibo:Article
+	; dc:title "Nicotinamide-2,2,2-trifluoroethanol (2/1)"
+    ; dc:isPartOf <urn:issn:16005368> 
+    ; bibo:volume "65" 
+    ; bibo:issue "4" 
+    ; bibo:pageStart "727" 
+    ; bibo:pageEnd "728" 
+    ; dc:creator :author1 
+    ; dc:creator :author2 
+    ; dc:creator :author3 
+    ; dc:creator :author4 
+    ; dc:creator :author5 
+    ; bibo:authorList (:author1 :author2 :author3 :author4 :author5) 
+	; dc:rights <http://creativecommons.org/licenses/by/2.0/uk>
+	; dc:language "en"
+	; dc:date "2009-04-01"
+	; bibo:doi "10.1107/S1600536809007594"
+	; bibo:abstract "The nicotinamide (NA) molecules of the title compound, 2C6H6N2O.C2H3F3O, form centrosymmetric R22(8) hydrogen-bonded dimers via N-H...O contacts. The asymmetric unit contains two molecules of NA and one trifluoroethanol molecule disordered over two sites of equal occupancy. The packing consists of alternating layers of nicotinamide dimers and disordered 2,2,2-trifluoroethanol molecules stacking in the c-axis direction. Intramolecular C-H...O and intermolecular N-H...N, O-H...N, C-H...N, C-H...O and C-H...F interactions are present."
+    ; prism:rightsagent "med@iucr.org" .
+    
+<urn:issn:16005368> 
+    a bibo:Journal
+    ; dc:title "Acta Crystallographica Section E: Structure Reports Online"@en ;
+    ; bibo:shortTitle "Acta Cryst. E"@en
+	; bibo:issn "1600-5368" .
+    
+:author1
+    a foaf:Person 
+    ; foaf:name "Johnston, B.F." .
+    
+:author2
+    a foaf:Person 
+	; foaf:name "Florence, A.J." .
+	
+:author3
+    a foaf:Person 
+	; foaf:name "Bardin, J." .
+	
+:author4
+    a foaf:Person 
+	; foaf:name "Kennedy, A.R." 
+	
+:author5
+    a foaf:Person 
+	; foaf:name "Wong, L.V." 
+

@@ -1,0 +1,61 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?s WHERE {
+  ?s <http://purl.org/dc/terms/creator> ?o
+} LIMIT 100
+
+
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+select ?y ?z where {
+  <doi:10.1107/S1600536808031681> ?y ?z
+}
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+select ?y ?z where {
+  <info:author:1686f4354515c3b2fca710ca5745de8ee8e45c1c> ?y ?z
+}
+
+
+
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?name WHERE {
+  ?s <http://xmlns.com/foaf/0.1/name> ?name
+} LIMIT 1000
+
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?mbox WHERE {
+  ?s <http://xmlns.com/foaf/0.1/mbox> ?mbox
+} LIMIT 100
+
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?title ?doi WHERE {
+  ?authornode <http://xmlns.com/foaf/0.1/mbox> "w.harrison@abdn.ac.uk" .
+  ?doi <http://purl.org/dc/terms/creator> ?authornode .
+  ?doi <http://purl.org/dc/elements/1.1/title> ?title
+} LIMIT 100
+
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?title ?doi WHERE {
+ ?s ?p "X-ray Crystallography Unit\n      School of Physics\n      Universiti Sains Malaysia\n      11800 USM, Penang\n      Malaysia" .
+ ?doi <http://purl.org/dc/terms/creator> ?s .
+ ?doi <http://purl.org/dc/elements/1.1/title> ?title
+} LIMIT 100
+
